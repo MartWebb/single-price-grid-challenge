@@ -1,0 +1,184 @@
+/* General */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(204, 43%, 93%);
+}
+
+.community-section {
+    background-color: hsl(0, 100%, 100%);
+    border-radius: .5em .5em 0 0;
+    padding: 1.5em;
+}
+
+.subscription-section {
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.5em;
+}
+
+.why-us-section {
+    background-color: hsl(179, 62%, 47%);
+    border-radius: 0 0 .5em .5em;
+    padding: 1.6em;
+}
+
+.container {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto; 
+    margin-top: 4em; 
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .1);
+    border-radius: .5em;
+}
+
+.header {
+    color: hsl(0, 100%, 100%);
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+}
+
+/* Community Section */
+
+.community-title {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.2rem;
+}
+
+.community-subtitle {
+    color: hsl(71, 73%, 54%);
+    font-size: .9rem;
+    margin: 1.1em 0;
+}
+
+.community-info {
+    color: hsl(218, 22%, 67%);
+    font-size: .8rem;
+    line-height: 1.8em;
+}
+
+/* Subscription Section */
+
+.subscription-cost {
+    display: flex;
+    align-items: center;
+    margin-bottom: .6em;
+}
+
+.subscription-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-right: .5em;
+}
+
+.subscription-per-month {
+    opacity: .6;
+}
+
+.subscription-info {
+    font-size: .94rem;
+    margin-bottom: 1.2em;
+}
+
+.subscription-btn {
+    border: black 1px solid;
+    color: hsl(0, 100%, 100%);
+    width: 100%;
+    padding: 1em;
+    font-size: .9rem;
+    border-radius: .4em;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .1);
+    border: none;
+    cursor: pointer;
+}
+
+.subscription-btn:hover,
+.subscription-btn:focus {
+    opacity: .9;
+}
+
+/* why Us Section */
+
+.why-us-text {
+    opacity: .9;
+    font-size: .9rem;
+}
+
+/* Footer */
+
+footer {
+    color: hsl(218, 22%, 67%);
+    padding: 0.5em 0;
+    margin-top: 3em;
+}
+.attribution {
+    font-size: .6rem;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(217, 43%, 55%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container {
+        margin-top: 5.5em;
+        width: 630px;
+        max-width: 630px;
+    }
+
+    .column-container {
+        display: flex;
+    }
+
+    .subscription-section {
+        width: 50%;
+        border-radius: 0 0 0 .5em;
+        padding: 2.4em;
+    }
+    
+    .why-us-section {
+        width: 50%;
+        border-radius: 0 0 .5em 0;
+        padding: 2.4em;
+    }
+
+    /* Community Section */
+
+    .community-section {
+        padding: 2.4em;
+    }
+
+    .community-title {
+        font-size: 1.7rem;
+    }
+
+    .community-subtitle {
+        font-size: 1.2rem;
+        margin: 1em 0;
+    }
+
+    .community-info {
+        font-size: 1rem;
+        line-height: 1.8em;
+    }
+
+    footer {
+        margin-top: 11em;
+    }
+}
