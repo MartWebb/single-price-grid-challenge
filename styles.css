@@ -11,6 +11,10 @@ body {
     font-family: 'Karla', sans-serif;
     background-color: hsl(204, 43%, 93%);
     color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; 
 }
 
 .community-section {
@@ -117,7 +121,6 @@ body {
 footer {
     color: hsl(218, 22%, 67%);
     padding: 0.5em 0;
-    margin-top: 3em;
 }
 .attribution {
     font-size: .6rem;
@@ -130,14 +133,15 @@ footer {
 }
 
 @media (min-width: 700px) {
-    body {
+    /* body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         height: 100vh;
-    }
+    } */
+
     .container {
-        margin-top: 5.5em;
+        margin-top: 9em;
         width: 630px;
         max-width: 630px;
     }
@@ -176,9 +180,5 @@ footer {
     .community-info {
         font-size: 1rem;
         line-height: 1.8em;
-    }
-
-    footer {
-        margin-top: 11em;
     }
 }
